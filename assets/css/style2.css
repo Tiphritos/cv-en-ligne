@@ -1,0 +1,75 @@
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr ;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-areas: "primary header" "primary secondary" "primary footer";
+    
+        
+    text-align: center;
+    
+    }
+    header{
+        background-color:black;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 30px;
+        font-size: 18px;
+        flex:auto;
+        grid-area: header;
+        text-align: center;
+       
+    }
+    
+    .primary{
+        position: relative;
+        background-color: orange;
+        grid-area: primary;
+        display: grid;
+        z-index: 0;
+    
+    }
+    .aside-1{
+       
+        
+    }
+    
+    .photo{
+        
+       position: absolute;
+       left: auto;
+       right: auto;
+       margin: auto;
+       padding: auto;
+        width:131px;
+        height: 167px;
+        padding-top: 25px;
+        transition: all 1s;
+        z-index: 1;
+        
+        
+    }
+    .photo:hover{
+        display: inline;
+        border-radius: 30%;
+        opacity: 0;
+    
+    }
+    
+    .information{
+    display: block;
+    padding-top: 74px;
+    
+    z-index: 10;
+    }
+    
+    
+    .secondary{
+        background-color: white;
+        grid-area: secondary;
+    }
+    
+    footer
+    {
+        grid-area: footer;
+    }
